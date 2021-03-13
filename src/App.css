@@ -47,8 +47,48 @@
   min-height: 20vh;
   background-color: #282c34;
   margin: 100px auto;
+  flex-direction: column;
   color: white;
   display: flex;
-  justify-content: center; 
+  justify-content: start; 
   align-items: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 10px auto 0 20px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.button {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  box-shadow: 1px 1px orange;
+  cursor: pointer;
+}
+
+.button:hover {
+  margin-top: 2px;
+  margin-left: 2px;
+  box-shadow: none;
+  background: linear-gradient(
+    90deg,
+    rgb(209, 84, 0) 0%,
+    rgb(145, 42, 2) 100%
+  );
 }
