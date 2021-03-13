@@ -15,8 +15,7 @@ jobs:
             - run: npm ci
             - run: npm test
             - run: npm run build
-
             - uses: wearerequired/lint-action@v1
-               with:
+              with:
                   eslint: true
                   prettier: true
