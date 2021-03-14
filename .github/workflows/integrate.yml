@@ -12,9 +12,9 @@ jobs:
             - uses: actions/setup-node@v1
               with:
                   node-version: 12
-            - run: npm ci
-            - run: npm test
-            - run: npm run build
+            - run: yarn ci
+            - run: yarn test
+            - run: yarn run build
             # - uses: wearerequired/lint-action@v1
             #   with:
             #       eslint: true
